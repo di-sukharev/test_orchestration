@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-07",
+  "root_model": "gpt-6-astra",
+  "root_reasoning_effort": "high",
+  "bun_version": "1.4.2",
+  "orchestration_source_commit": "8b983fe70a2b04361212e4097304d1fcf449dd18",
+  "sha256": {
+    "TASK.md": "a462840bc888bd15f3ea6fe128dd460e620d579b3d4287ce9debf9d05be75ef0",
+    "AGENTS.md": "f5aca6d274c4d4e0fba2c3a61b3433c172ae47cd82120e9a7c666d3355610399",
+    "benchmark/acceptance.py": "bbbb78af24dd6dac9b67cc5f0dd76351780799a6c54f56ae31601810463fd907",
+    "benchmark/METHODOLOGY.md": "931eae1f1ad46bd5b56120fec669cd6464644db23f5a05efe84be7ae1e41a611",
+    "benchmark/prompts/solo.md": "c38c5be84a785826c4fee830c265f334ef6efa273fdda798dd5dbded59efc415",
+    "benchmark/prompts/orchestrated.md": "32571969286bc4d559bb04995fdbf7381b23c3c2317c60e9dc4f167b54d02903",
+    "benchmark/skills/orchestration/SKILL.md": "5b5329bcc09a800d51f596920ca5753b26c113f27ad14c4753fa0c3fa8de8429",
+    "benchmark/skills/loop-code-review/SKILL.md": "b44fbb3408bbbfc5f5c7b78652e1555b8b95f3c21ea83c43913d39f41e8bb163"
+  }
+}

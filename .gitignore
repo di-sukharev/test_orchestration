@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.sqlite*
+*.db*
+coverage/
+test-results/
+playwright-report/
+benchmark/private/
+.DS_Store
+__pycache__/
+*.pyc
