@@ -1,0 +1,96 @@
+{
+  "label": "solo",
+  "commit": "9b28469366d28f579467ffc381ccffe554e5b75d",
+  "branch": "codex/astra-solo",
+  "frozen_input_integrity": {
+    "TASK.md": true,
+    "AGENTS.md": true,
+    "benchmark/acceptance.py": true,
+    "benchmark/METHODOLOGY.md": true,
+    "benchmark/prompts/solo.md": true,
+    "benchmark/prompts/orchestrated.md": true,
+    "benchmark/skills/orchestration/SKILL.md": true,
+    "benchmark/skills/loop-code-review/SKILL.md": true
+  },
+  "checks": [
+    {
+      "command": [
+        "bun",
+        "install",
+        "--frozen-lockfile"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 0.049,
+      "log": "solo-check-1.txt"
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "typecheck"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 1.917,
+      "log": "solo-check-2.txt"
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "lint"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 0.945,
+      "log": "solo-check-3.txt"
+    },
+    {
+      "command": [
+        "bun",
+        "test"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 1.275,
+      "log": "solo-check-4.txt"
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "build"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 1.419,
+      "log": "solo-check-5.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "benchmark/acceptance.py"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 1.907,
+      "log": "solo-check-6.txt"
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "test:e2e"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 6.784,
+      "log": "solo-check-7.txt"
+    }
+  ],
+  "human_visual_review": "not performed",
+  "evaluation_started_at_commit": "9b28469366d28f579467ffc381ccffe554e5b75d",
+  "review_status": "passed_self_review",
+  "agent_committed_and_pushed": true
+}

@@ -1,0 +1,30 @@
+{
+  "seed_commit": "c0506e5ee654de6fa2d6c866a538da24a389507e",
+  "repo_url": "https://github.com/di-sukharev/test_orchestration",
+  "root_model": "gpt-6-astra",
+  "effort": "high",
+  "desktop_service_tier_config": "default",
+  "per_request_service_tier_recorded": false,
+  "runs": [
+    {
+      "label": "solo",
+      "branch": "codex/astra-solo",
+      "thread_id": "01a11603-3b83-7f01-850e-1141b1211eda",
+      "title": "TaskForge benchmark \u2014 Astra solo",
+      "review_status": "passed_self_review",
+      "agent_commit": "9b28469366d28f579467ffc381ccffe554e5b75d",
+      "review_rounds": 3
+    },
+    {
+      "label": "orchestrated",
+      "branch": "codex/astra-orchestrated",
+      "thread_id": "01a1161a-627e-7e33-8b09-5d7b43c5d893",
+      "title": "TaskForge benchmark \u2014 Astra orchestrator",
+      "review_status": "open_after_three_rounds",
+      "agent_commit": null,
+      "controller_snapshot_commit": "f60ddde6d2ed45a4bef9289383ea15f4cac81171",
+      "review_rounds": 3
+    }
+  ],
+  "additional_probes": "Five exploratory black-box test methods derived from the union of review findings, applied unchanged to both captured implementations after their measured runs. They were not pre-registered."
+}

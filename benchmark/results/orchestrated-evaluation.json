@@ -1,0 +1,87 @@
+{
+  "label": "orchestrated",
+  "commit": "f60ddde6d2ed45a4bef9289383ea15f4cac81171",
+  "branch": "codex/astra-orchestrated",
+  "frozen_input_integrity": {
+    "TASK.md": true,
+    "AGENTS.md": true,
+    "benchmark/acceptance.py": true,
+    "benchmark/METHODOLOGY.md": true,
+    "benchmark/prompts/solo.md": true,
+    "benchmark/prompts/orchestrated.md": true,
+    "benchmark/skills/orchestration/SKILL.md": true,
+    "benchmark/skills/loop-code-review/SKILL.md": true
+  },
+  "checks": [
+    {
+      "command": [
+        "bun",
+        "install",
+        "--frozen-lockfile"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 0.075,
+      "log": "orchestrated-check-1.txt"
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "typecheck"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 1.803,
+      "log": "orchestrated-check-2.txt"
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "lint"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 1.005,
+      "log": "orchestrated-check-3.txt"
+    },
+    {
+      "command": [
+        "bun",
+        "test"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 2.811,
+      "log": "orchestrated-check-4.txt"
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "build"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 1.48,
+      "log": "orchestrated-check-5.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "benchmark/acceptance.py"
+      ],
+      "exit_code": 0,
+      "timed_out": false,
+      "seconds": 5.419,
+      "log": "orchestrated-check-6.txt"
+    }
+  ],
+  "human_visual_review": "not performed",
+  "evaluation_started_at_commit": "c0506e5ee654de6fa2d6c866a538da24a389507e",
+  "review_status": "open_after_three_rounds",
+  "agent_committed_and_pushed": false,
+  "snapshot_published_by_controller": true,
+  "snapshot_note": "Application code unchanged after evaluation; controller added BENCHMARK_STATUS.md and committed/pushed the captured result with review open."
+}

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "benchmark/exploratory.py",
+    "$REPO"
+  ],
+  "exit_code": 0,
+  "timed_out": false,
+  "seconds": 1.804,
+  "summary": {
+    "exploratory": true,
+    "tests": 5,
+    "failed_test_cases": 0,
+    "assertion_failure_events": 0,
+    "error_events": 0,
+    "passed": 5
+  }
+}

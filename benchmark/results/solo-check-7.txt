@@ -1,0 +1,25 @@
+$ bun run build && playwright test
+$ vite build
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 29 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.46 kB │ gzip:  0.31 kB
+dist/assets/index-D9YhCk7z.css    9.15 kB │ gzip:  2.76 kB
+dist/assets/index-BASv_zwL.js   246.01 kB │ gzip: 75.80 kB
+✓ built in 968ms
+[WebServer] $ bun src/server/index.ts
+
+Running 6 tests using 1 worker
+
+(node:27773) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/e2e/workflows.spec.ts:21:1 › owner creates, edits, filters, comments, reviews history and changes password (1.7s)
+  ✓  2 tests/e2e/workflows.spec.ts:100:1 › shareable invitation, read-only viewer, editor promotion and removal (1.2s)
+  ✓  3 tests/e2e/workflows.spec.ts:165:1 › mobile layout is usable and expired sessions return to sign in (541ms)
+  ✓  4 tests/e2e/workflows.spec.ts:193:1 › account reports wrong password but signs out an expired session (512ms)
+  ✓  5 tests/e2e/workflows.spec.ts:218:1 › read errors offer retry and invalid submissions show server validation (463ms)
+  ✓  6 tests/e2e/workflows.spec.ts:247:1 › runtime serves SPA and JSON failures, including oversized input (29ms)
+
+  6 passed (5.2s)

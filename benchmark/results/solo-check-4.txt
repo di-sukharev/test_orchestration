@@ -1,0 +1,24 @@
+bun test v1.4.2 (744846f84)
+
+tests/unit/api.test.ts:
+(pass) Authentication and configuration > normalizes identity, hashes passwords, sets protected opaque cookie, logout revokes [100.80ms]
+(pass) Authentication and configuration > password change revokes all sessions and refuses old credentials [174.56ms]
+(pass) Authentication and configuration > expired sessions and generic credential failures [83.71ms]
+(pass) Authentication and configuration > rejects foreign origins, null origins and cross-site fetches [44.05ms]
+(pass) Authentication and configuration > rate limit does not trust forwarded identity and emits retry time [83.80ms]
+(pass) Authentication and configuration > production cookie and misconfiguration checks [62.72ms]
+(pass) Authentication and configuration > concurrent duplicate registration gives one account and a conflict [48.12ms]
+(pass) Authentication and configuration > a simultaneous login cannot survive password revocation [90.09ms]
+(pass) Authentication and configuration > unknown APIs return JSON 404 for anonymous clients [23.04ms]
+(pass) Project and nested authorization > two owners cannot access each other’s project or nested resources [66.59ms]
+(pass) Project and nested authorization > owner protected, viewer read-only, roles effective immediately, removal unassigns [64.54ms]
+(pass) Project and nested authorization > invitation binding, concurrent one-time acceptance, expiry and invalidation on removal [66.12ms]
+(pass) Tasks, comments, search and durable data > CRUD, defaults, literal filters and stable pagination with tied timestamps [68.03ms]
+(pass) Tasks, comments, search and durable data > malformed and invalid input never becomes a server error [70.65ms]
+(pass) Tasks, comments, search and durable data > comment scope and authorship, task cleanup, historical activity and project cascades [71.86ms]
+(pass) Tasks, comments, search and durable data > database reopening preserves sessions, tasks, comments and migration version [131.34ms]
+
+ 16 pass
+ 0 fail
+ 288 expect() calls
+Ran 16 tests across 1 file. [1264.00ms]

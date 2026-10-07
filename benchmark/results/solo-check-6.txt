@@ -1,0 +1,31 @@
+test_activity_survives_task_deletion (__main__.Acceptance) ... ok
+test_anonymous_and_outsider_access (__main__.Acceptance) ... ok
+test_auth_session_and_email_normalization (__main__.Acceptance) ... ok
+test_comment_ownership (__main__.Acceptance) ... ok
+test_cookie_security_and_no_secret_json (__main__.Acceptance) ... ok
+test_duplicate_email_and_weak_password (__main__.Acceptance) ... ok
+test_editor_permissions (__main__.Acceptance) ... ok
+test_filters_and_filtered_total (__main__.Acceptance) ... ok
+test_foreign_origin_is_rejected (__main__.Acceptance) ... ok
+test_invalid_auth_is_generic (__main__.Acceptance) ... ok
+test_invitation_email_binding_and_replay (__main__.Acceptance) ... ok
+test_member_removal_unassigns_tasks (__main__.Acceptance) ... ok
+test_nested_resource_scope (__main__.Acceptance) ... ok
+test_owner_cannot_be_demoted_or_removed (__main__.Acceptance) ... ok
+test_pagination_stable_and_validated (__main__.Acceptance) ... ok
+test_password_change_revokes_all_sessions (__main__.Acceptance) ... ok
+test_project_deletion_removes_access (__main__.Acceptance) ... ok
+test_project_owner_and_crud (__main__.Acceptance) ... ok
+test_role_change_takes_effect (__main__.Acceptance) ... ok
+test_search_literal_wildcards (__main__.Acceptance) ... ok
+test_spa_and_unknown_api (__main__.Acceptance) ... ok
+test_task_defaults_and_crud (__main__.Acceptance) ... ok
+test_task_validation (__main__.Acceptance) ... ok
+test_viewer_permissions (__main__.Acceptance) ... ok
+test_z_persistence_across_restart (__main__.Acceptance) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 1.632s
+
+OK
+{"tests": 25, "failures": 0, "errors": 0, "passed": 25}

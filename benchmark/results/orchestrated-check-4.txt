@@ -1,0 +1,40 @@
+bun test v1.4.2 (744846f84)
+
+tests/ui.test.tsx:
+(pass) a new account can focus and create its first project at a narrow viewport [35.04ms]
+(pass) task list returns the user to sign-in when the session expires [10.27ms]
+(pass) comment list returns the user to sign-in when the session expires [8.76ms]
+(pass) task save returns the user to sign-in when the session expires [8.67ms]
+(pass) comment add returns the user to sign-in when the session expires [8.26ms]
+(pass) password change returns the user to sign-in when the session expires [4.60ms]
+(pass) an incorrect current password remains a validation error without signing out [3.43ms]
+(pass) logout clears private caches and ignores delayed activity from the previous account [16.69ms]
+(pass) password change clears private caches and ignores delayed activity from the previous account [14.95ms]
+(pass) session expiry clears private caches and ignores delayed activity from the previous account [10.31ms]
+(pass) a delayed authentication error from the previous account cannot expire a new account [5.19ms]
+(pass) failed project detail loading clears the previous project and its member information [5.19ms]
+(pass) project transitions clear activity and ignore a delayed task creation from the previous project [10.25ms]
+(pass) a delayed task save cannot replace the task the user subsequently opens [11.84ms]
+(pass) viewer sees only permitted comment deletion controls [4.13ms]
+(pass) editor sees only permitted comment deletion controls [3.57ms]
+(pass) owner sees only permitted comment deletion controls [4.11ms]
+(pass) task saves preserve unrelated concurrent edits and reset their baseline from the server [6.26ms]
+(pass) typing during a task save remains dirty against the returned baseline [6.11ms]
+(pass) account modal stays open through Strict Mode effect setup and cleanup [3.13ms]
+(pass) account modal restores focus and synchronizes state after escape [2.56ms]
+(pass) account modal restores focus and synchronizes state after cancel event [1.98ms]
+(pass) account modal restores focus and synchronizes state after native close [1.71ms]
+(pass) account modal restores focus and synchronizes state after Cancel [1.75ms]
+(pass) account modal restores focus and synchronizes state after Close account settings [1.50ms]
+
+tests/api.test.ts:
+(pass) partial updates preserve concurrent changes and recheck authorization after a delayed body [750.48ms]
+(pass) concurrent password changes cannot reuse the verified old password after revocation [584.85ms]
+(pass) Unicode literal search keeps filtered totals and stable pagination; unknown routes are JSON 404 [78.98ms]
+(pass) embedded NUL in persisted text returns 400 without creating or updating resources [81.37ms]
+(pass) auth, project permissions, invitations, task filters, comments, activity, and cleanup persist through server restart [956.15ms]
+
+ 30 pass
+ 0 fail
+ 247 expect() calls
+Ran 30 tests across 2 files. [2.80s]
